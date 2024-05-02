@@ -32,3 +32,15 @@ main{
 .title img{
     transform: rotate(-5deg);
 }
+.video{
+    width: 960px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
