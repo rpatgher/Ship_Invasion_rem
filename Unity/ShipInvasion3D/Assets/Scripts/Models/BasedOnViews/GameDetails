@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+
+// Esta clase sirve para guardar los datos de una partida
+[System.Serializable] public class GameDetails{
+    public int GameId;
+    public DateTime GameDate;
+    public bool GameIsPlayerWonGame;
+    public int PlayerId;
+    public string PlayerUsername;
+    public int PlayerWins;
+    public int PlayerLosses;
+    public int PlayerCoins;
+    public int ArenaId;
+    public string ArenaName;
+    public int ArenaLevel;
+    public int ArenaMatchesRequired;
+}
+
+
+// Esta clase sirve para guardar una lista de varias partidas
+[System.Serializable] public class Games {
+    public List<GameDetails> Items;
+}
+
+
+// Esta clase sirve para guardar los datos de una partida con todas sus jugadas
+[System.Serializable] public class GameWithPlays{
+    public GameDetails Game;
+    public List<Play> Plays;
+}
